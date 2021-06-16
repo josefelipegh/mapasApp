@@ -42,9 +42,6 @@ export class ZoomRangeComponent implements AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit(): void {
-
-    console.log('afterViewInit', this.divMapa);
-
     this.mapa = new mapboxgl.Map({
       container: this.divMapa.nativeElement,
       style: 'mapbox://styles/mapbox/streets-v11',
